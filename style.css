@@ -1,0 +1,233 @@
+:root {
+  --main-font-family: "Poppins", sans-serif;
+  --logo-font-family: "Heebo", sans-serif;
+  --content-font-color: #4f4f4f;
+  --heading-font-color: #333333;
+  --secondary-accent-font-color: #eb5757;
+  --primary-accent-font-color: #2d9cdb;
+  --footer-primary-font-color: #ffffff;
+  --footer-secondary-font-color: #f2f2f2;
+  --secondary-bg-color: #100e1d;
+  --services-btn-bg-color: #e0e0e0;
+  --services-btn-font-color: #828282;
+  --services-btn--hover--bg-color: #2d9cdb;
+}
+
+body {
+  /* background: var(--main-bg-color); */
+  font-family: var(--main-font-family);
+  color: var(--content-font-color);
+  /* display: flex;
+    align-content: center;
+    justify-content: center; */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-top: min(9vw, 140px);
+}
+.contents {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 19px 12px 0 12px;
+  max-width: 1700px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  flex-grow: 1;
+}
+.nav-wrapper {
+  grid-row: 1 / 2;
+}
+#main-nav {
+  display: flex;
+  position: absolute;
+
+  line-height: 3em;
+  justify-items: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--secondary-bg-color);
+
+  z-index: 99;
+  margin-left: -24px;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid var(--main-font-color);
+  font-weight: 700;
+  border-bottom: 1px solid;
+}
+
+.menu-item > a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
+#hamburger {
+  z-index: 100;
+  transform: rotate(90deg);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.logo {
+  font-family: var(--logo-font-family);
+  color: var(--heading-font-color);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+}
+
+.menu-closed {
+  opacity: 0;
+  visibility: hidden;
+}
+.menu-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+footer {
+  grid-row: 3 / 4;
+  text-align: center;
+  font-size: 0.77em;
+}
+
+.menu-closed-icon::before {
+  content: "|||";
+  transform: rotate(90deg);
+}
+
+.menu-open-icon:before {
+  content: "X";
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+}
+.service-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 100%;
+  border-radius: 12px;
+}
+.hero-wrapper {
+  width: 95%;
+}
+
+.opening-q {
+  color: var(--primary-accent-font-color);
+  font-size: 1.125rem;
+}
+.big-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.green-bg {
+  background: #27ae60;
+}
+
+.blue-bg {
+  background: #2d9cdb;
+}
+.red-bg {
+  background: #eb5757;
+}
+
+.icon > span {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--main-bg-color);
+  margin-top: 2rem;
+  padding: 1.93rem;
+}
+.get-started {
+  background: var(--services-btn-bg-color);
+  color: var(--services-btn-font-color);
+  border: 0;
+  padding: 9px 13px;
+  border-radius: 12px;
+  margin-top: 1.75rem;
+}
+.card:hover > .get-started {
+  background: var(--services-btn--hover--bg-color);
+  color: var(--footer-primary-font-color);
+}
+
+.card:hover {
+  box-shadow: 3px 3px 10px rgba(155, 155, 155, 0.8);
+  border-radius: 12px;
+}
+.menu-item > a,
+.menu-item > a:visited {
+  color: var(--footer-primary-font-color);
+}
+.card-content {
+  margin-top: 1.5rem;
+}
+/* Breaking at 900px seems to be the best compromise  */
+@media (min-width: 900px) {
+  .menu-closed-icon::before {
+    content: "";
+    transform: rotate(0);
+  }
+  .menu-open-icon:before {
+    content: "";
+  }
+  .contents {
+    margin: 3vw 5vw 0 5vw;
+  }
+
+  #main-nav {
+    display: flex;
+    position: relative;
+    line-height: 1.5em;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 3em;
+    opacity: 1;
+    right: 2vw;
+    background: none;
+    visibility: visible;
+  }
+
+  .menu-item > a,
+  .menu-item > a:visited {
+    color: var(--heading-font-color);
+  }
+  .service-cards-wrapper {
+    flex-direction: row;
+  }
+}
