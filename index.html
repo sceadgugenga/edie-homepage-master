@@ -42,7 +42,8 @@
           <section id="home">
             <p class="opening-q">Unhappy with your website?</p>
             <div class="big-heading">
-              We create beautiful and fast web services
+              We create beautiful <br />
+              and fast web services
             </div>
             <div class="hero-wrapper">
               <img
@@ -52,23 +53,38 @@
               />
             </div>
 
-            <div class="big-heading">Story, emotion and purpose</div>
+            <div class="big-heading">
+              Story, emotion <br />
+              and purpose
+            </div>
             <p class="big-content">
               We help transform your ideas into real world applications that
               will outperform your toughest competition and help you achieve
               your strategic goals in short period of time.
             </p>
-            <form class="join-email-wrapper">
-              <label for="join-mail-input" class="join-email-lbl"></label>
-              <input type="email" name="join-email-input" />
-              <button class="join-btn" type="submit">Join</button>
+            <form id="contact" class="join-email-wrapper">
+              <label for="join-mail-input" class="join-email-lbl"
+                >Want us to contact you?</label
+              >
+              <div class="join-input">
+                <input
+                  placeholder="Email"
+                  type="email"
+                  name="join-email-input"
+                />
+                <button class="join-btn" type="submit">Join</button>
+              </div>
             </form>
           </section>
           <section id="services">
+            <div class="medium-heading">
+              We offer high <br />
+              demand services
+            </div>
             <div class="service-cards-wrapper">
               <div class="card">
                 <div class="icon">
-                  <span class="material-symbols-outlined blue-bg">create</span>
+                  <span class="material-symbols-outlined blue-bg">edit</span>
                 </div>
                 <div class="card-title">UI/UX Design</div>
                 <div class="card-content">
@@ -96,24 +112,147 @@
                 </div>
                 <div class="card-title">Back End</div>
                 <div class="card-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  a metus ac nulla consequat aliquet id quis turpis.
+                  Clients Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Duis a metus ac nulla consequat aliquet id quis turpis.
                 </div>
                 <button class="get-started">Get Started</button>
               </div>
             </div>
           </section>
-          <div id="our-work">Our Work</div>
-          <div id="clients">Clients</div>
-          <div id="contact">Contact</div>
+
+          <section id="our-work">
+            <div class="medium-heading">
+              Good design means <br />
+              good business
+            </div>
+            <div id="our-work-wrapper">
+              <div class="work-wrapper dashboard">
+                <div class="work-img-wrapper">
+                  <img
+                    src="smarthome.jpg"
+                    alt="Smart home dash board"
+                    class="our-work-img"
+                  />
+                </div>
+                <div class="work-type">Full stack application</div>
+                <div class="work-title">Smart home dashboard</div>
+              </div>
+              <div class="work-wrapper ux-ui">
+                <div class="work-img-wrapper">
+                  <img
+                    src="onboard.png"
+                    alt="Onboard application"
+                    class="our-work-img"
+                  />
+                </div>
+                <div class="work-type">UX/UI design</div>
+                <div class="work-title">Onboard application</div>
+              </div>
+              <div class="work-wrapper mobile-app">
+                <div class="work-img-wrapper">
+                  <img
+                    src="booking.png"
+                    alt="Mobile booking system"
+                    class="our-work-img"
+                  />
+                </div>
+                <div class="work-type">Mobile application</div>
+                <div class="work-title">Booking system</div>
+              </div>
+              <div class="work-wrapper product-home">
+                <div class="work-img-wrapper">
+                  <img
+                    src="juice-product.png"
+                    alt="Juice product homepage"
+                    class="our-work-img"
+                  />
+                </div>
+                <div class="work-type">Front End application</div>
+                <div class="work-title">Juice product homepage</div>
+                <div class="see-more">
+                  see more
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="team">
+            <div class="team-text-wrapper">
+              <div class="team-small-heading">Meet the team</div>
+              <div class="team-desc medium-heading">
+                We are chilled and a laidback team
+              </div>
+              <div class="small-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+            <div class="team-group">
+              <div class="team-img team-member2">
+                <img src="person2.png" alt="Team member 2" />
+              </div>
+              <div class="team-img team-member1">
+                <img src="person1.png" alt="Team member 1" />
+              </div>
+              <div class="team-img team-member3">
+                <img src="person3.png" alt="Team member 3" />
+              </div>
+            </div>
+          </section>
+          <section id="clients">
+            <q class="medium-heading"
+              >Fast and outstanding results. Edie understands their client’s
+              needs. They have a young and talented team.
+            </q>
+            <div class="client-wrapper">
+              <div class="client-img-wrapper">
+                <img src="person4.png" alt="Carlos Trans Avatar" />
+              </div>
+              <div class="client-info-wrapper">
+                <div class="name">Carlos Tran</div>
+                <div class="company">The Decorate Gatsby</div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
-      <footer>
-        <div class="footer">
-          created by <a> sceadgugenga </a> - devChallenger.io
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="footer-wrapper">
+        <nav id="footer-nav">
+          <div class="menu-item"><a href="#home">Home</a></div>
+          <div class="menu-item"><a href="#services">Services</a></div>
+          <div class="menu-item"><a href="#our-work">Our Work</a></div>
+          <div class="menu-item"><a href="#clients">Clients</a></div>
+          <div class="menu-item"><a href="#contact">Contact</a></div>
+        </nav>
+        <div class="footer-center-wrapper">
+          <div class="footer-logo-wrapper">
+            <div class="logo">Edie</div>
+          </div>
+          <div class="social-media">
+            <img src="twitter.svg" alt="" srcset="" />
+            <img src="linkedin.svg" alt="" srcset="" />
+            <img src="instagram.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <form class="join-email-wrapper">
+          <label for="join-mail-input" class="join-email-lbl"
+            >Want us to contact you?</label
+          >
+          <div class="join-input">
+            <input placeholder="Email" type="email" name="join-email-input" />
+            <button class="join-btn" type="submit">Join</button>
+          </div>
+        </form>
+      </div>
+      <div class="created-by">
+        created by
+        <a href="https://github.com/sceadgugenga/"> sceadgugenga </a> -
+        devChallenger.io
+      </div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
